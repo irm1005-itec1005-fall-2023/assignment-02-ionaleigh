@@ -3,17 +3,248 @@
  * CSS FILE
  */
 
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
+  font-family: Arial, sans-serif;
+}
+
+/*HEADER STUFF START*/
+
+header {
+  /*make fixed*/
+  color: white;
+  background-color: #1a4468;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.headerflex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+.headercont {
+  flex: 1;
+}
+
+
+.headerimg img {
+  height: 50px;
+}
+
+/*HEADER STUFF END*/
+/*NAV STUFF START*/
+
+nav {
+  background-color: #023047;
+  color: #ffffff;
   text-align: center;
+  padding: 1em 0;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.grid-container1 li {
+  text-align: center;
+}
+
+/*NAV STUFF END*/
+/*MAIN STUFF START*/
+
+main {
+  padding: 2rem;
+  background-image: linear-gradient(#ddecff, #a5ceff);
+  text-align: center;
+}
+
+.herofaqbox {
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+}
+
+.herocont {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+  margin-left: 6rem;
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 1rem;
+  min-width: 500px;
+  max-width: 600px;
+  box-shadow: #8e9ebb -4px 4px 4px;
+}
+
+.catimg {
+  align-self: stretch;
+}
+
+.catimg img {
+  width: 300px;
+  height: 100%;
+  border-radius: 0.9rem;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 0.9rem;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0px;
+}
+
+.herow {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.herowtop {
+  color:#023047;
+  padding: 1.4rem;
+  background-color: #ffffff;
+  border-top-right-radius: 0.9rem;
+}
+
+.herowbottom {
+  color: white;
+  font-size: 1.0rem;
+  padding: 1.4rem;
+  background-color: #6f7aa3;
+  border-bottom-right-radius: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.herowbtn {
+  width: 70%;
+}
+
+.btn-y {
+  display: inline-block;
+  border-radius: 30rem;
+  padding: 1rem;
+  background-color: #162b53;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.btn-n {
+  display: inline-block;
+  border-radius: 30rem;
+  padding: 1rem 1.24rem;
+  background-color: #162b53;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 800;
+  margin-left: 2rem;
+}
+
+.faq {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  text-align: left;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-left: 46rem;
+  box-shadow: #8e9ebb -4px 4px 4px;
+  min-width: 550px;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.testbox {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: #95adde;
+  padding: 2rem;
+  gap: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-left: 46rem;
+  box-shadow: #8e9ebb -4px 4px 4px;
+  min-width: 550px;
+  max-width: 600px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.grid-container2 > * {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.3rem;
   color: #023047;
 }
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/*TABLE*/
+
+.tablebox {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #f9f9f9;
+  border-style: double;
+  border-color:#1a4468;
+  width: 25rem
+}
+
+table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #041e2b;
+  color: #f9f9f9;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h4 {
+  margin-bottom: 1rem;
+}
+
